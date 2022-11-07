@@ -1,0 +1,76 @@
+
+<div *ngIf="mobile" class="container" class="mob-table">
+<div class="headers">
+  <h2 >Mobiles data</h2>
+  <button class="btn-button "(click)="openForm()">Add Mobiles</button>
+</div>
+<div>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>SNo</th>
+        <th>Mobiledevices</th>
+        <th>
+          Ram
+        </th>
+        <th>
+          Processor
+        </th>
+        <th>
+          Camerapixel
+        </th>
+        <th></th>
+        <th>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mobile of mobile">
+            <td>{{mobile.id}}</td>
+            <td>{{mobile.mobiledevices}}</td>
+            <td>{{mobile.ram}}</td>
+            <td>{{mobile.processor}}</td>
+            <td>{{mobile.camerapixel}}</td>
+            <td>
+                <button class="btn btn-primary"(click)="openForm(mobile)">Edit</button>
+                </td>
+                <td>
+                <button class="btn btn-danger" (click)="deleteMobiledata(mobile.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<!-- <ng-template #err>
+  <p class="text-danger"></p>
+</ng-template> -->
+<div class="form-wrapper" *ngIf="showForm">
+  <div class="mobile-form">
+    <h2 class="">{{formHeader}}</h2>
+    <div class="group">
+      <label for="id">SNo:</label>
+      <input type="number" class="form-control" [(ngModel)]="id" name="id">
+    </div>
+    <div class="group">
+      <label for="mobiledevices">Mobiledevices:</label>
+      <input type="text" class="form-control" [(ngModel)]="mobiledevices" name="mobiledevices">
+    </div>
+    <div class="group">
+      <label for="ram">Ram:</label>
+      <input type="text" class="form-control" [(ngModel)]="ram" name="ram">
+    </div>
+    <div class="group">
+      <label for="processor">Processor:</label>
+      <input type="text" class="form-control" [(ngModel)]="processor" name="processor">
+    </div>
+    <div class="group">
+      <label for="camerapixel">Camerapixel:</label>
+      <input type="text" class="form-control" [(ngModel)]="camerapixel" name="camerapixel">
+    </div>
+    <div class="action">
+      <button class=" btn btn-primary save "(click)="saveForm()">Save Changes</button>
+      <button class=" btn btn-danger cancel "(click)="closeForm()">Cancel</button>
+    </div>
+  </div>
+</div>

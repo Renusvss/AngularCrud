@@ -1,0 +1,11 @@
+{
+  "Mobile": [
+    {
+      "id": 2,
+      "mobiledevices": "Samsung",
+      "ram": "16GB",
+      "processor": "i5",
+      "camerapixel": "18mp"
+    }
+  ]
+}

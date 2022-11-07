@@ -1,0 +1,79 @@
+.mob-table {
+  padding: 10px 20px;
+  background-color: rgb(228, 247, 248);
+  border-radius: 30px;
+  border-color: black;
+}
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: aqua;
+}
+.btn-button {
+  border-radius: 10px;
+  padding-top: 2px;
+  color: black;
+  background-color: rgb(131, 212, 131);
+}
+.btn-button:hover {
+  cursor: pointer;
+}
+.tbody {
+  text-align: center;
+  padding-top: 5px;
+  padding: 5px;
+}
+.table {
+  margin-top: 60px;
+}
+.btn-primary {
+  background-color: rgb(103, 103, 250);
+  border-radius: 10px;
+  height: 40px;
+}
+.btn-danger {
+  background-color: rgb(224, 127, 127);
+  border-radius: 10px;
+  height: 40px;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color:rgba(0,0,0,0.4);
+  z-index: 100;
+
+}
+.mobile-form{
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+  width:500px
+}
+.form-control{
+  width:100%
+}
+.group{
+  display:flex;
+  margin:10px;
+}
+.group label{
+  line-height: 30px;
+  height:30px;
+  font-size: medium;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.action{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:200px;
+}
